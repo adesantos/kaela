@@ -5,6 +5,10 @@ import FontAwesome from "react-fontawesome";
 
 import { Banner } from "./component/banner";
 import { Home } from "./views/home";
+import { Login } from "./component/login";
+import { Wishlist } from "./views/wishlist";
+import { Bag } from "./views/bag";
+import { Products } from "./views/products";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
@@ -27,6 +31,18 @@ const Layout = () => {
 								<Route exact path="/">
 									<Banner />
 									<Home />
+								</Route>
+								<Route exact path="/login">
+									<Login />
+								</Route>
+								<Route exact path="/wishlist">
+									<Wishlist />
+								</Route>
+								<Route exact path="/bag">
+									<Bag />
+								</Route>
+								<Route exact path="/products">
+									<Products />
 								</Route>
 								<Route>
 									<h1>Not found!</h1>

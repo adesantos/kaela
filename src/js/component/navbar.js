@@ -17,9 +17,9 @@ export const Navbar = () => {
 			<div id="navbarNav" className="collapse navbar-collapse">
 				<ul className="navbar-nav">
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/products" className="nav-link">
 							LINGERIE
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
 						<a className="nav-link" href="#">
@@ -29,9 +29,9 @@ export const Navbar = () => {
 				</ul>
 			</div>
 
-			<a className="navbar-brand" href="#">
+			<Link to="/" className="navbar-brand">
 				KAELA SHOP
-			</a>
+			</Link>
 
 			<div className="justify-content-end">
 				<ul className="navbar-nav">
@@ -43,25 +43,25 @@ export const Navbar = () => {
 								placeholder="Search"
 								aria-label="Search"
 							/>
-							<button className="btn my-2 my-sm-0" type="submit">
+							<a className="btn my-2 my-sm-0" type="submit">
 								<i className="fa fa-search" />
-							</button>
+							</a>
 						</form>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/login" className="nav-link">
 							<i className="fa fa-user" />
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/wishlist" className="nav-link" href="#">
 							<i className="fa fa-heart" />
-						</a>
+						</Link>
 					</li>
 					<li className="nav-item">
-						<a className="nav-link" href="#">
+						<Link to="/bag" className="nav-link" href="#">
 							<i className="fa fa-shopping-bag" />
-						</a>
+						</Link>
 					</li>
 				</ul>
 			</div>

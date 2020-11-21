@@ -1,16 +1,43 @@
 /*LANDING*/
 
+$primary-btn: #F783AC;
 
-
+hr{
+    width: 70%;
+    border-top: 1px solid #F4ACB7;
+}
+.margin-top{
+    margin-top: 5%;
+}
+.margin-bottom{
+    margin-bottom: 5%;
+}
+.padding-bottom{
+    padding-bottom: 70px;
+}
+.product-name{
+    color: #000;
+}
+.like, .like:focus{
+    float: right;
+    color: #F783AC;
+    border: none;
+    outline: none;
+    background-color: transparent !important;
+}
+button{
+    background-color: $primary-btn !important;
+    border-color: $primary-btn !important;
+}
 
 /*NAVBAR*/
 .navbar{
     .nav-link{
-        color: #F783AC;
+        color: $primary-btn;
     }
     .navbar-toggler{
-        color: #F783AC;
-        border-color: #F783AC;
+        color: $primary-btn;
+        border-color: $primary-btn;
     }
     .navbar-brand{
         color: #000;
@@ -24,8 +51,8 @@
                     height: 30px;
                     border-radius: 1px;
                 }
-                button{
-                    color: #f783ac;
+                a{
+                    color: $primary-btn;
                     border-color: #fff;
                     i{
                         margin-top: 5px;
@@ -39,23 +66,22 @@
 
 
 
+/*LOGIN*/
+.login{
+    padding: 0 50px;
+}
+.login:nth-child(2){
+    border-right: 1px solid #ced4da;
+}
+
+
+
 /*HOME*/
 .home{
     background-color: #F8E7ED;
     >.row{
         text-align: center;
         padding-top:50px;
-        padding-bottom: 50px;
-
-        .kalea-title{
-            h2{
-                margin-top: 5%;
-            }
-            hr{
-                width: 70%;
-                border-top: 1px solid #F4ACB7;
-            }
-        }
 
         .img-info{
             width: 100%;
@@ -107,11 +133,18 @@
             }
         }
 
-        .best-sellers{
+        #best-sellers{
             height: 450px;
             margin-top: 8%;
             background-color: #FFF;
             .row{
+                .title{
+                    margin-top: -45px;
+                    > a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
                 .picture{
                     .frame{
                         margin-top: -20px;
@@ -157,6 +190,61 @@
                 }
             }
         }
+
+        #reviews{
+            margin-top: 8%;
+        }
+
+        #stores{
+            margin-top: 8%;
+            margin-bottom: 5%;
+            background-color: #FFF9FA;
+        }
+    }
+}
+
+
+/*CHECKOUT*/
+.shop-col{
+    margin-top: 5px;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 1px solid #e2e2e2;
+}
+.items-row{
+    margin-top: 30px;
+    .shop-col-item{
+        text-align: center;
+    }
+    .item-info{
+        color: #797979;
+        text-align: justify;
+
+        .item-name{
+            font-weight: 500;
+        }
+        .item-move{
+            margin-top: auto;
+            .item-trash{
+                float: right;
+                color: #cacaca;
+            }
+        }
+    }
+}
+.o-summary{
+    border-left: 1px solid #e2e2e2;
+    hr{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .total{
+        float: right;
+        font-size: 21px;
+    }
+    .btn-checkout{
+        color: #FFF;
+        margin-top: 50px;
     }
 }
 
