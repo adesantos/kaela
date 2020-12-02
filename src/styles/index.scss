@@ -211,6 +211,13 @@ button{
     text-align: center;
     border-bottom: 1px solid #e2e2e2;
 }
+.item-counter{
+    cursor: pointer;
+    :hover{
+        text-decoration: underline;
+    }
+    margin:0 3px;
+}
 .items-row{
     margin-top: 30px;
     .shop-col-item{

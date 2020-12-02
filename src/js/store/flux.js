@@ -17,9 +17,6 @@ const getState = ({ getStore, getActions, setStore }) => {
 			]
 		},
 		actions: {
-			exampleFunction: () => {
-				getActions().changeColor(0, "green");
-			},
 			loadSomeData: () => {
 				firebase.initializeApp(config);
 
@@ -27,8 +24,8 @@ const getState = ({ getStore, getActions, setStore }) => {
 					.database()
 					.ref("/")
 					.on("value", snapshot => {
-						var username = snapshot.val();
-						console.log(username);
+						var db = snapshot.val();
+						console.log(db);
 					});
 			}
 		}
